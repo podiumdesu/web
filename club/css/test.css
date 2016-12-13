@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+}
+nav {
+  width: 200px;
+}
+.main {
+  -webkit-flex: 1;
+          flex: 1;
+}
+
+/*@import "compass/css3";
+
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em;
+}
+*/
+
+
+
+/*.container
+{
+  flex-direction: row;
+  flex-flow: row nowrap;
+  align-items: baseline;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .main {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 15%;
+    margin-bottom: 0.15rem; }*/
+  /*.test {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 15%;
+        -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
+    width: 15%; } }*/
+
+/**/
+/*.main {
+  background-color: #DCDCDC;
+}
+.test{
+  background-color: #FFFFF3;
+}
+@media (min-width: 768px) {
+  .nav-bar {
+    position: fixed;
+    height: 100vh; } }
+
+
+.test{
+  flex-grow: 1;
+}
+
+.main{
+  flex-grow: 2;
+}
+*/
+
+
+/*.container{
+  display: -webkit-flex;
+  display: flex;
+}
+.test{
+  width: 200px;
+  background-color: #DCDCDC；
+
+}
+.main{
+  -webkit-flex:1;
+          flex: 1;
+}
+
+.main{
+  background-color: #Dfafe3;
+}
+*/
