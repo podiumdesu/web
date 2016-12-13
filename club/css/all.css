@@ -220,9 +220,12 @@
         display: -ms-flexbox;
         display: flex; } }
 
-.post_list{
-  justify-content: space-between;
-}
+/*.post_list{
+  /*justify-content: space-between;*/
+/*  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}*/
 /*.post_list {
           margin: 0.12rem 0.5rem 1rem 0; }
 .post-list, .post-list div {
@@ -234,6 +237,7 @@
           display: -ms-flexbox;
           display: flex; } }*/
 .post{
+  flex: 0 0 auto;
   margin-top: 0.15rem;
   /*margin-left: 0.5rem;*/
   padding: 0.18rem 0.11rem;
