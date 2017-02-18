@@ -1,0 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  background-image: url(http://ojvrmnpos.bkt.clouddn.com/2.png)
+
+}
+.accordion {
+  font-family:Arial, Helvetica, sans-serif;
+  background: #fff;
+  width: 600px;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid #542437;
+  border-radius: 10px;
+}
+
+.accordion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.accordion li {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion [type=radio] {
+  display: none;
+}
+
+
+.accordion label {
+  display: block;
+  border: 1px solid #542437;
+  background-color: #D95B43;
+  color: #542437;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 580;  /*设置占满整行*/
+  line-height: 40px;
+  transition: all .1s ease-out;
+  text-shadow: rgba(255, 0, 0, 0.5);
+}
+
+.accordion ul li label:hover , .accordion [type=radio]:checked ~ label {  /*这个选择器以前没有用过*/
+  cursor: pointer;
+  color: white;
+  background-color: orange;
+}
+
+.accordion .content {
+  border: 1px solid #542437;
+  margin-top: 1px;
+  margin-bottom: 3px;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: all .6s ease-out;
+}
+
+.accordion h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.accordion p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+
+/*vertical*/
+
+.vertical ul li .content {
+  height: 0px;
+  border-top: 0;
+  border-bottom: 0;
+}
+.vertical [type=radio]:checked ~ label ~ .content {
+  height: 250px;
+  border-bottom: 1px solid #542437;
+}
