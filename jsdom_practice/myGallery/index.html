@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>myGallery</title>
+   <link rel="stylesheet" href="all.css"  />
+ </head>
+
+ <body>
+   <h1>Snapshots</h1>
+   <ul>
+     <li><a onclick="showPic(this);return false" href="images/1.jpg" title="the display window">display window</a></li>
+     <li><a onclick="showPic(this);return false" href="images/2.jpg" title=" the keyboard">keyboard</a></li>
+     <li><a onclick="showPic(this);return false" href="images/3.jpg" title="a cute girl">girl</a></li>
+     <li><a onclick="showPic(this);return false" href="images/4.jpg" title="keep moving">codes</a></li>
+   </ul>    　<!-- return false防止用户被带到其他的窗口　返回false告诉浏览器这个链接没有被触发-->
+   <img src="images/5.jpg" id="placeholder" alt="my gallery"  />
+   <p id="discription" >choose a picture</p>
+
+   <script type="text/javascript">
+      function showPic(whichpic) {　　//whichpic代表着一个元素节点
+        var source = whichpic.getAttribute("href"); //把路径存入变量
+        var placeholder = document.getElementById("placeholder");//获得元素节点
+        placeholder.setAttribute("src",source);
+
+        var word = whichpic.getAttribute("title");
+        var display = document.getElementById("discription");
+        display.childNodes[0].nodeValue = word
+
+      }
+
+
+    function getChild() {
+        var children = document.getElementsByTagName("body")[0];
+        alert(children.childNodes.length);
+        alert(children.nodeType);  //元素节点是１，属性节点是２，文本节点是３
+      }
+
+   </script>
+
+
+ </body>
+ </html>
